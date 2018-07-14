@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>婚车网首页</title>
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" >
+<link rel="stylesheet" href="css/personal.css" >
+</head>
+<body>
+<!------------------------------------------ 搜索框部分------------------------------------------>
+<a id="top" name="top"></a>
+<div id="fixedTop">
+	<div id="subTop">
+		<ul>
+			<li><a href="#">我的订单</a></li>
+			<li><a class="shoppingCar" href="#"><span id="gwc" class="glyphicon glyphicon-shopping-cart"></span>购物车 <span class="badge">0</span> 件</a></li>
+			<li><a href=#>收藏夹</a></li>
+			<li><a href=#>请登录</a></li>
+			<li><a href=#>免费注册</a></li>
+		</ul>
+		<p>
+			<span>您好，欢迎光临婚车网！</span>
+		</p>	
+	</div>
+	<div id="top">
+		<form role="form">
+			<img alt="" src="img/logo.png">
+			<div class="form-group">
+				<input type="text" class="form-control" name="search" placeholder=" 搜索  婚车品牌、婚车服务">
+				<button class="btn btn-primary btn-danger" type="submit">&nbsp&nbsp&nbsp搜索&nbsp&nbsp&nbsp</button>
+				<br>
+				<a href="#">婚车优惠套餐</a>&nbsp&nbsp  <a href="#">单选婚车</a>
+			</div>
+			<div class="TEL">
+				<h3>婚车网客服热线</h3>
+				<h2>400-159-8888</h2>
+			</div>
+		</form>
+	</div>
+<!------------------------------------------ 搜索框部分结束 ------------------------------------------>
+
+<!------------------------------------------ 导航栏部分 ------------------------------------------>
+<div class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+     　<!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+         <span class="sr-only">Toggle Navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+       
+  </div>
+  <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+  <div class="collapse navbar-collapse navbar-responsive-collapse">
+    	<ul class="nav navbar-nav nav-tabs nav-justified">
+      		<li id="nav_border_bottom" ><a href="##">网站首页</a></li>
+      		<li><a id="nav_border_bottom" href="##">婚车套餐</a></li>
+      		<li><a id="nav_border_bottom"  href="##">主婚车</a></li>
+      		<li><a id="nav_border_bottom"  href="##">副婚车</a></li>
+      		<li><a id="nav_border_bottom" href="##">加入我们</a></li>
+	 	</ul>
+  </div>
+</div>
+</div>
+<!------------------------------------------ 导航栏部分结束 ------------------------------------------>
+
+<!------------------------------------------提交订单部分开始------------------------------------------>
+	<div id="submitOrderDiv">
+		<form id="orderForm" role="form-horizontal" action="" method="post">
+			<span>接亲路线安排</span>
+			<hr>
+			<div class="form-group">
+				<label for="name">集合日期</label> 
+				<input type="date" class="form-control subOrderInput" id="name" placeholder="请输入名称" name="date">
+			</div>
+			<div class="form-group">
+				<label for="name">集合时间</label>
+			 	<select class="form-control subOrderInput" name="time"> 
+			 		<option>请选择时间</option>
+					<option>6:00</option>
+					<option>6:30</option>
+					<option>7:00</option>
+					<option>7:30</option>
+					<option>8:00</option>
+					<option>8:30</option>
+					<option>9:00</option>
+					<option>9:30</option>
+					<option>10:00</option>
+					<option>10:30</option>
+					<option>11:00</option>
+					<option>11:30</option>
+					<option>12:00</option>
+				</select>
+				<span id="spanDiv">请您提前与车主沟通好集合时间</span>
+			</div>
+			<div class="form-group">
+				<label for="name">集合地址</label> 
+			 	<select class="form-control subOrderInput" name="address"> 
+					<option>请选择城区</option>
+					<option>香洲区</option>
+					<option>金湾区</option>
+					<option>斗门区</option>
+				</select>
+				<input id="reminder" class="form-control subOrderInput" type="text" name="detailAddress" placeholder="请输入详细地址">
+			</div>
+			<br>
+			<span>联系信息</span>
+			<hr>
+			<div class="form-group">
+				<label for="name">联系人</label>
+				<input type="text" class="form-control tip time_line_input subOrderInput" value="沈先生" readonly>
+			</div>
+			<div class="form-group">
+				<label for="name">联系电话</label>
+				<input type="text" class="form-control tip time_line_input subOrderInput" value="15845687458" readonly>
+			</div>
+			<div class="form-group">
+				<label for="name" id="textArea">给车主留言</label>
+				<textarea class="form-control" rows="3"></textarea>
+			</div>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>婚车信息</th>
+						<th>支付定金</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>婚车1</td>
+						<td>5000</td>
+						<td><a href=""><span class="glyphicon glyphicon-remove"></span></a></td>
+					</tr>
+					<tr>
+						<td>婚车2</td>
+						<td>5000</td>
+						<td><a href=""><span class="glyphicon glyphicon-remove"></span></a></td>
+					</tr>
+				</tbody>
+			</table>
+			<hr>
+			<h4 class="text-right">实付金额:</h4>
+			<div class="form-group text-right">
+				<button type="submit" class="btn btn-default btn-lg" id="submitBtn">提交订单</button>
+				<button type="button" class="btn btn-default btn-lg">取消</button>
+			</div>
+		</form>
+	</div>
+	<!------------------------------------------ 提交订单部分结束 ------------------------------------------>
+
+	<!-------------------------------------------网页底部开始  ----------------------------------->
+	<footer>
+		<div id="footer_top"></div>
+		<div id="footList">
+			<div id="imgDiv">
+				<img alt="" src="img/logo_footer.png">
+				<h2>400-159-8888</h2>
+				<h3>全国24小时服务</h3>
+			</div>
+			<div id="listDiv">
+				<ul>
+					<p>新手 </p>
+					<a href="#"><li>订车常见问题</li></a>
+					<a href="#"><li>车主常见问题</li></a>
+					<a href="#"><li>车主宝典</li></a>
+					<a href="#"><li>结婚咨询</li></a>
+					<a href="#"><li>焦点专题</li></a>
+					<a href="#"><li>婚车问题</li></a>
+					<a href="#"><li>结婚知道</li></a>
+				</ul>
+				<ul>
+					<p>保障 </p>
+					<a href="#"><li>支付定金</li></a>
+					<a href="#"><li>车主证件认证</li></a>
+					<a href="#"><li>出车保证金</li></a>
+				</ul>
+				<ul>
+					<p>条款 </p>
+					<a href="#"><li>预定婚车须知</li></a>
+					<a href="#"><li>车主加入须知</li></a>
+					<a href="#"><li>违约赔付条例</li></a>
+					<a href="#"><li>结婚咨询</li></a>
+					<a href="#"><li>隐私协议</li></a>
+					<a href="#"><li>版权声明</li></a>
+				</ul>
+				<ul>
+					<p>关于 </p>
+					<a href="#"><li>关于我们</li></a>
+					<a href="#"><li>商家合作</li></a>
+					<a href="#"><li>联系方式</li></a>
+					<a href="#"><li>网站地图</li></a>
+				</ul>
+			</div>
+		</div>
+		<div id="footer_bottom">Produced by JSD1803@Leo&Horbin, July 11th 2018&nbsp&nbsp&nbsp </div>
+	</footer>
+	<!-------------------------------------------网页底部结束  ----------------------------------->
+	
+	<!-------------------------------------------右侧固定栏开始  ----------------------------------->
+	<div id="rightFixedBar">
+		<ul>
+			<li class="glyphicon glyphicon-earphone bigger" class="tooltip-test" data-toggle="tooltip" data-placement="left" title="400-159-8888"></li>
+			<li class="glyphicon glyphicon-comment bigger" class="tooltip-test" data-toggle="tooltip" data-placement="left" title="在线咨询"><a id="onlineContact" href="#"></a></li>
+			<li id="toTop"><a href="#top"><span class="glyphicon glyphicon-arrow-up"><br><span id="subToTop">回顶部</span></span></a></li>
+		</ul>
+	</div>
+
+	<!-------------------------------------------右侧固定栏结束  ----------------------------------->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

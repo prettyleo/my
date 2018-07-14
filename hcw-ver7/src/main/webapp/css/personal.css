@@ -1,0 +1,329 @@
+body{
+	background-color: #f0eeee;
+}
+
+/**************************************顶部搜索栏部分样式开始******************************/
+
+#top{
+	width: 80%;
+	min-width: 1500px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	background-color: white;
+}
+
+#top img{
+	height: 61px;
+	float: left;
+	margin-left: 49px;
+}
+
+.TEL{
+	float: right;
+	margin-top: -51px;
+	padding-right: 17px;
+	text-align: right;
+	font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", 微软雅黑, Arial, sans-serif;
+}
+
+.TEL h2,.TEL h3{
+	margin: 0;
+}
+
+.TEL h3{
+	color: #999;
+	font-size: 14px;
+    line-height: 20px;
+}
+
+.TEL h2{
+	font-size: 20px;
+    color: #f83244;
+    font-weight: bold;
+}
+
+#top .form-group{
+	margin: 0 auto;
+	border-radius: 4px;
+	width: 542px;
+	min-width: 650px;
+	position: relative;
+	left: -32px;
+}
+
+.btn-danger{
+	margin-top: -3px;
+	background-color: rgb(255,0,54);
+    border-radius: 0 4px 4px 0;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+/* 搜索框 */
+.form-control{
+	width: 515px;
+	display: inline-block;
+	margin-right: -9px;
+	height: 38px;
+	border: 1px solid rgb(255,0,54);
+	
+}
+
+.form-group a{
+    font-size: 12px;
+    color: #999;
+    cursor: pointer;
+}
+
+#subTop{
+	width: 80%;
+	min-width:1500px;
+	margin: 0 auto;
+	overflow: hidden;
+	color: #999;
+	background-color: rgb(248,248,248);
+	border: 1px solid #f2f2f2;
+	font-family: "Microsoft YaHei", tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+
+#subTop p{
+	width: 400px;
+	float: left;
+	text-align: right;
+	margin: auto 0;
+	margin-left: -222px;
+	padding: 5px 5px 5px 0px;
+}
+
+#subTop a{
+	color: #999;
+	padding-left: 10px;
+	font-size: 12px;
+}
+
+#gwc{
+	color: red;
+	font-size: 14px;
+}
+
+#subTop ul{
+	list-style: none;
+	margin: auto 0;
+	float: right;
+	padding-right: 10px;
+}
+
+#subTop li{
+	float: left;
+	padding-left: 5px;
+	margin-top: 4px;
+}
+
+/**************************************顶部搜索栏部分样式结束 ******************************/
+
+/**************************************导航栏部分样式开始 ******************************/
+.navbar{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#nav_border_bottom:hover{
+	border-bottom: 5px solid red;
+}
+/**************************************导航栏部分样式结束 ******************************/
+
+
+/*------------------------------------------提交订单部分开始-----------------------------------------*/
+#submitOrderDiv{
+	margin: 0 auto;
+	width: 80%;
+	min-width: 1500px;
+	margin-top: 30px;
+	padding: 36px 50px;
+	background-color: white;
+}
+
+#submitOrderDiv hr{
+	margin-top: 10px;
+}
+
+.subOrderInput{
+	width: 200px;
+}
+
+.form-group{
+	margin-top: 20px;
+}
+
+#submitOrderDiv label{
+	width: 80px;
+	margin-right: 20px;
+	text-align: right;
+}
+
+#spanDiv{
+	margin-left: 20px;
+	color: #6a6a6a;
+	font-size: 12px;
+}
+
+#reminder{
+	margin-left: 20px;
+	width: 380px;
+}
+
+#submitBtn{
+	margin-left: 80px;
+}
+
+.btn-lg{
+	background-color: #ff0036;
+	color: white;
+	font-weight: bolder;
+}
+
+#orderForm{
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid #dfdfdf;
+	padding: 30px;
+	box-shadow: #dfdfdf 0px 7px 26px 2px;
+}
+
+#textArea{
+	vertical-align: top;	
+}
+
+#submitOrderDiv h4{
+	padding-right: 30px;
+}
+/*------------------------------------------提交订单部分结束-----------------------------------------*/
+
+/**************************************右侧固定栏部分样式开始 ******************************/
+#rightFixedBar{
+	width: 73px;
+	border: 1px solid rgb(184,27,34);
+	position: fixed;
+	top: 420px;
+	right: 10px;
+	color: white;
+}
+#rightFixedBar ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	color: rgb(184,27,34);
+	height: 225px;
+	overflow: hidden;
+}
+
+
+#rightFixedBar li{
+	width: 73px;
+	height: 76px;
+	display: inline-block;
+	border: 1px solid rgb(184,27,34);
+	margin: -1px 0px 0px -1px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 76px;
+	font-size: 38px;
+	/* text-shadow: rgb(230,234,243) 5px 3px 3px; */
+	padding: 0;
+}
+
+#rightFixedBar li:hover{
+	font-size: 45px;
+	cursor: pointer;
+}
+
+.glyphicon-arrow-up{
+	height: 40px;
+}
+
+#toTop{
+	background-color: rgb(184,27,34);
+	font-size: 12px;
+	color: white;
+}
+
+#toTop a{
+	color: white;
+}
+#subToTop{
+	font-size: 18px;
+    font-family: "宋体";
+	position: relative;
+	top: -14px;
+}
+/**************************************右侧固定栏部分样式结束 ******************************/
+
+
+/**************************************底部样式开始 ******************************/
+footer{
+	background-color: #393939;
+	color: rgb(153,153,153);
+}
+
+#footList{
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#footList ul{
+	border-left: 1px solid white;
+	position: relative;
+	list-style-type: none;
+	padding-left:59px;
+	float: left;
+	margin-left: 100px;
+}
+#footList p{
+	position: absolute;
+	left: 15px;
+}
+
+#imgDiv img{
+	height: 61px;
+}
+#imgDiv{
+	margin-left: 50px;	
+}
+#listDiv{
+	margin-left: 50px;
+}
+
+#listDiv,#imgDiv{
+	display: inline-block; 
+}
+
+#listDiv p{
+    font-family: Microsoft Yahei,Arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#listDiv a{
+	color: rgb(153,153,153);
+}
+
+#footer_top{
+	height: 15px;
+	background-color: #444;
+    border-top: 1px solid #1d1d1d;
+    border-bottom: 1px solid #1d1d1d;
+    margin-bottom: 20px;
+}
+
+#footer_bottom{
+	height: 30px;
+	background-color: #444;
+    border-top: 1px solid #1d1d1d;
+    border-bottom: 1px solid #1d1d1d;
+    margin-bottom: 35px;
+    text-align: right;
+}
+
+/**************************************底部样式结束 ******************************/
