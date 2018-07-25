@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+	<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" 
+		"http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+	<!-- namespace表示命名空间 ,值必须为接口的全名称 -->
+	<!-- 实现类没有，mybatis框架会生成接口的实现类 -->
+	<mapper namespace="cn.tedu.ssm.dao.DeptDao">
+		
+		<!-- 插入部门信息  void insertDept(Dept dept); -->
+		<!-- 
+			private Integer id;
+			private String deptName;
+			private String deptLoc;
+		 -->
+		<insert id="insertDept" parameterType="cn.tedu.ssm.bean.Dept">
+			insert into dept (dept_name,dept_loc) values (#{deptName},#{deptLoc})
+		</insert>
+		
+		<!-- 查询所有  List<Dept> selectAll();-->
+		<!-- 由于表字段名和类的属性名不一致,因此要配置result,匹配名字 -->
+		<resultMap type="cn.tedu.ssm.bean.Dept" id="resultDept">
+			<id column="id" property="id"/>
+			<result column="dept_name" property="deptName"/>
+			<result column="dept_loc" property="deptLoc"/>
+		</resultMap>
+		<select id="selectAll" resultMap="resultDept">
+			select * from dept
+		</select>
+		
+	</mapper>
+	
+	
+	
+	
+	
+	
+	
+	
+	
